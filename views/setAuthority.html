@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="/easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <script type="text/javascript" src="/javascripts/jquery.js"></script>
+    <!-- easyui -->
+    <script type="text/javascript" src="/easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="/easyui/locale/easyui-lang-zh_CN.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            $(window.parent.document.getElementById("trueSubmit")).click(function(){
+                $("#form").submit();
+            });
+            $("#pid").hide();
+            $("#type").change(function(){
+                if($(this).val()==1){
+                    $("#pid").show();
+                }else{
+                    $("#pid").hide();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div style="height: 20px;color: red;font-weight: bold;font-size: 13px;" id="message"><%=message%></div>
+<form action="/user/update/type" method="post" id="form">
+    <input type="hidden" name="username" value="<%=username%>">
+    <input type="hidden" name="targetType" value="<%=targetType%>">
+    <table class="table-list-form">
+        <tr>
+            <td align="right" >
+                <span>权限</span>
+            </td>
+            <td>
+                <select name="type" id="type">
+                    <option value="0">普通会员</option>
+                    <option value="1">商家</option>
+                    <%if(type==3){%>
+                        <option value="2">管理员</option>
+                    <%}%>
+                </select>
+            </td>
+        </tr>
+        <tr id="pid">
+            <td align="right" >
+                <span>场景ID</span>
+            </td>
+            <td>
+                <input class="easyui-validatebox" type="text" name="pid" data-options="required:true" />
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+<script type="text/javascript">
+</script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <script src="/javascripts/jquery.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#password,#username").keydown(function(){
+                $("#msg").text("");
+            });
+        });
+    </script>
+    <style>
+        body {
+            padding: 50px;
+            font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+        }
+
+        a {
+            color: #00B7FF;
+        }
+
+        body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #eee;
+        }
+
+        .form-signin {
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+        div{
+            padding-top : 5px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <form class="form-signin" role="form" action="/" method="post">
+        <h2 class="form-signin-heading">请先登录</h2>
+        <span style="color: red;height: 15px;" id="msg"><%=message%></span>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon" style="BACKGROUND: url(/pt/user.png);width: 50px;" ></span>
+            <input type="text" class="form-control" name="username" id="username" placeholder="用户名" required autofocus>
+        </div>
+        <div class="input-group input-group-lg" style="padding-bottom: 5px;">
+            <span class="input-group-addon" style="BACKGROUND: url(/pt/password.png);width: 50px;" ></span>
+            <input type="password" class="form-control" name="password" id="password" placeholder="密码" required autofocus>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" id="submit" style="width: 270px;">登录</button>
+    </form>
+</div>
+</body>
+</html>

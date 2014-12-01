@@ -1,0 +1,67 @@
+.tab{
+    border-collapse: collapse;
+    border: 2px solid #C1CDD8;
+    background: #FFFFFF;
+
+    color: #333333;
+    font-size: 12px;
+    line-height: 100%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.tab th,
+.tab td {
+    border: 1px solid #C1CDD8;
+    padding: 6px;
+}
+table.table-list-form th,
+table.table-list-form td {
+    border: 1px solid #C1CDD8;
+    padding: 6px;
+}
+
+table.table-list th {
+    color: #666666;
+    text-align: left;
+    font-size: 1em;
+    font-weight: bold;
+    background: #EBEBEB;
+}
+.bg01 {background-color: #F6F6F6;}
+.bg02 {background-color: #EBEBEB;}
+.bg03 {background-color: #F6F6F6;}
+.bg04 {background-color: #FFFFFF;}
+.bg05 {background-color: #FFFFE6;}
+.bg06 {background-color: #efefe2;}
+.bg07 {background-color: #FFFFCC;}
+.zi5 {
+    FONT-SIZE: 12px;
+    COLOR: #666666;
+    FONT-FAMILY: Geneva, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+table.table-list {
+    border-collapse: collapse;
+    border: 2px solid #C1CDD8;
+    color: #000;
+    background: #FFFFFF;
+    width: 100%;
+
+}
+table.table-list-form{
+    border-collapse: collapse;
+}
+table.table-list th,
+table.table-list td {
+    text-align: left;
+    border: 1px solid #C1CDD8;
+    padding: 0.3em;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.even{
+    background-color:#FFFFD7;
+}
+.mouseOver{
+    background-color:#D7FFFF;
+}

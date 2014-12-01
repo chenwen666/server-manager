@@ -1,0 +1,116 @@
+[2014-11-21 09:50:34.093] [INFO] normal - mongodb已连接
+[2014-11-21 09:58:55.704] [INFO] normal - mongodb已连接
+[2014-11-21 09:59:31.911] [INFO] normal - mongodb已连接
+[2014-11-21 10:08:45.420] [INFO] normal - mongodb已连接
+[2014-11-21 10:35:08.184] [INFO] normal - mongodb已连接
+[2014-11-21 14:08:44.825] [INFO] normal - mongodb已连接
+[2014-11-21 14:25:46.089] [INFO] normal - mongodb已连接
+[2014-11-21 14:26:29.566] [INFO] normal - mongodb已连接
+[2014-11-21 14:45:36.889] [INFO] normal - mongodb已连接
+[2014-11-21 14:47:25.863] [INFO] normal - mongodb已连接
+[2014-11-21 14:48:35.808] [INFO] normal - mongodb已连接
+[2014-11-21 14:57:52.232] [INFO] normal - mongodb已连接
+[2014-11-21 14:59:31.455] [INFO] normal - mongodb已连接
+[2014-11-21 15:01:43.034] [INFO] normal - mongodb已连接
+[2014-11-21 15:02:12.822] [INFO] normal - mongodb已连接
+[2014-11-21 15:03:53.683] [INFO] normal - mongodb已连接
+[2014-11-21 15:10:51.397] [INFO] normal - mongodb已连接
+[2014-11-21 15:12:12.657] [INFO] normal - mongodb已连接
+[2014-11-21 15:12:47.350] [INFO] normal - mongodb已连接
+[2014-11-21 15:13:44.151] [INFO] normal - mongodb已连接
+[2014-11-21 15:14:00.202] [INFO] normal - mongodb已连接
+[2014-11-21 15:14:30.789] [INFO] normal - mongodb已连接
+[2014-11-21 15:17:51.218] [INFO] normal - mongodb已连接
+[2014-11-21 15:20:56.658] [INFO] normal - mongodb已连接
+[2014-11-21 15:34:47.377] [INFO] normal - mongodb已连接
+[2014-11-21 15:58:14.006] [INFO] normal - mongodb已连接
+[2014-11-21 16:01:33.916] [INFO] normal - mongodb已连接
+[2014-11-21 16:03:17.899] [INFO] normal - mongodb已连接
+[2014-11-21 16:03:32.744] [ERROR] normal - 保存广告错误:ReferenceError: requestUtils is not defined
+    at add (E:\workpace\nodejs\server-manager\routes\advertRoute.js:40:22)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:312:12)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:295:3)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:189:10)
+[2014-11-21 16:07:22.872] [INFO] normal - mongodb已连接
+[2014-11-21 16:08:11.676] [INFO] normal - mongodb已连接
+[2014-11-21 16:09:29.725] [INFO] normal - mongodb已连接
+[2014-11-21 16:10:25.480] [INFO] normal - mongodb已连接
+[2014-11-21 16:11:08.263] [INFO] normal - mongodb已连接
+[2014-11-21 16:17:25.115] [INFO] normal - mongodb已连接
+[2014-11-21 16:18:32.313] [INFO] normal - mongodb已连接
+[2014-11-21 16:21:45.565] [INFO] normal - mongodb已连接
+[2014-11-21 16:23:58.608] [INFO] normal - mongodb已连接
+[2014-11-21 16:27:59.650] [INFO] normal - mongodb已连接
+[2014-11-21 16:30:26.560] [INFO] normal - mongodb已连接
+[2014-11-21 16:33:22.085] [INFO] normal - mongodb已连接
+[2014-11-21 16:33:27.981] [ERROR] normal - 保存广告错误:TypeError: Cannot read property 'file' of undefined
+    at add (E:\workpace\nodejs\server-manager\routes\advertRoute.js:42:32)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:312:12)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:295:3)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:189:10)
+[2014-11-21 16:35:21.798] [INFO] normal - mongodb已连接
+[2014-11-21 16:42:54.542] [INFO] normal - mongodb已连接
+[2014-11-21 16:45:33.661] [INFO] normal - mongodb已连接
+[2014-11-21 17:07:21.230] [INFO] normal - mongodb已连接
+[2014-11-21 17:07:37.207] [INFO] normal - mongodb已连接
+[2014-11-21 17:10:58.061] [INFO] normal - mongodb已连接
+[2014-11-21 17:11:18.499] [INFO] normal - mongodb已连接
+[2014-11-21 17:24:31.343] [INFO] normal - mongodb已连接
+[2014-11-21 17:36:10.753] [INFO] normal - mongodb已连接
+[2014-11-21 17:36:42.533] [INFO] normal - mongodb已连接
+[2014-11-21 17:38:52.003] [INFO] normal - mongodb已连接
+[2014-11-21 17:39:37.944] [INFO] normal - mongodb已连接
+[2014-11-21 17:43:19.030] [INFO] normal - mongodb已连接
+[2014-11-21 17:46:01.170] [INFO] normal - mongodb已连接
+[2014-11-21 17:47:11.438] [INFO] normal - mongodb已连接
+[2014-11-21 17:56:05.643] [INFO] normal - mongodb已连接
+[2014-11-21 17:57:36.708] [INFO] normal - mongodb已连接
+[2014-11-21 18:07:23.167] [INFO] normal - mongodb已连接
+[2014-11-21 18:07:54.624] [INFO] normal - mongodb已连接
+[2014-11-21 18:08:35.957] [INFO] normal - mongodb已连接
+[2014-11-21 19:51:51.608] [INFO] normal - mongodb已连接
+[2014-11-21 19:52:55.982] [INFO] normal - mongodb已连接
+[2014-11-21 19:53:30.031] [INFO] normal - mongodb已连接
+[2014-11-21 19:54:04.486] [INFO] normal - mongodb已连接
+[2014-11-21 19:55:38.381] [INFO] normal - mongodb已连接
+[2014-11-21 19:56:11.613] [INFO] normal - mongodb已连接
+[2014-11-21 19:56:42.390] [INFO] normal - mongodb已连接
+[2014-11-21 20:05:38.261] [INFO] normal - mongodb已连接
+[2014-11-21 20:07:27.431] [INFO] normal - mongodb已连接
+[2014-11-21 20:07:45.022] [INFO] normal - mongodb已连接
+[2014-11-21 20:08:17.482] [INFO] normal - mongodb已连接
+[2014-11-21 20:09:34.711] [INFO] normal - mongodb已连接
+[2014-11-21 20:09:57.753] [INFO] normal - mongodb已连接
+[2014-11-21 20:14:53.098] [INFO] normal - mongodb已连接
+[2014-11-21 20:58:58.054] [INFO] normal - mongodb已连接
+[2014-11-21 21:00:53.523] [INFO] normal - mongodb已连接
+[2014-11-21 21:02:08.475] [INFO] normal - mongodb已连接
+[2014-11-21 21:03:51.799] [INFO] normal - mongodb已连接
+[2014-11-21 21:04:27.113] [INFO] normal - mongodb已连接
+[2014-11-21 21:04:32.046] [INFO] normal - mongodb已连接
+[2014-11-21 21:06:38.172] [INFO] normal - mongodb已连接
+[2014-11-21 21:06:58.005] [INFO] normal - mongodb已连接
+[2014-11-21 21:39:27.334] [INFO] normal - mongodb已连接
+[2014-11-21 22:03:11.720] [INFO] normal - mongodb已连接
+[2014-11-21 22:04:49.447] [INFO] normal - mongodb已连接
+[2014-11-21 22:06:38.534] [INFO] normal - mongodb已连接
+[2014-11-21 22:10:23.524] [INFO] normal - mongodb已连接
+[2014-11-21 22:12:19.081] [INFO] normal - mongodb已连接
+[2014-11-21 22:16:05.979] [INFO] normal - mongodb已连接
+[2014-11-21 22:17:13.384] [INFO] normal - mongodb已连接
+[2014-11-21 22:18:25.226] [INFO] normal - mongodb已连接
+[2014-11-21 22:19:29.178] [INFO] normal - mongodb已连接
+[2014-11-21 22:20:15.163] [INFO] normal - mongodb已连接
+[2014-11-21 22:35:14.169] [INFO] normal - mongodb已连接

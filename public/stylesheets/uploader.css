@@ -1,0 +1,66 @@
+body{
+
+}
+#updateTab{
+    width: 100%;
+    border: 1px dashed #009999;
+    border-collapse :collapse;
+    font-family: "微软雅黑";
+    font-size: 20px;
+    background-color: #e1eef6;
+}
+#updateTab tr{
+    line-height: 160%;
+}
+#updateTab tr:first-child{
+    line-height: 100%;
+}
+img{
+    border: 1px solid #ffffff;
+}
+#updateTab tr:last-child{
+    text-align: center;
+    line-height: 240%;
+}
+#updateTab td{
+    border: 1px dashed #009999;
+}
+#updateTab tr td:first-child{
+    width: 20%;
+}
+#title{
+    background: #575859;
+    background: -webkit-gradient(linear, left top, left bottom,
+    from(#575859), to(#272425));
+    color: #ffffff;
+    line-height: 200%;
+}
+.inputs{
+    border: 1px solid;
+    border-style: none none solid none;
+    width: 200px;
+    background-color: #e1eef6;
+}
+.inputs:focus{
+    outline: none;
+}
+.sex{
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.button{
+    width: 100px;
+    padding: 5px;
+    font-size: 20px;
+    font-style: inherit;
+    background:-webkit-gradient(linear,left top, left bottom,from(#46b8da),to(#0000ff)) ;
+    border: none;
+    color: #ffffff;
+}
+.button:hover{
+    background:-webkit-gradient(linear, left top, left bottom,from(#0044cc),to(#0000ff));
+    border: none;
+}
+td{
+    padding-left: 40px;
+}

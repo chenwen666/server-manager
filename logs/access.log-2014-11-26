@@ -1,0 +1,44 @@
+[2014-11-26 09:29:40.626] [INFO] normal - mongodb已连接
+[2014-11-26 09:29:41.368] [INFO] normal - Express server listening on port 3001
+[2014-11-26 09:29:41.368] [ERROR] normal - listening: worker 3776, Address: 0.0.0.0:3001
+[2014-11-26 09:29:41.384] [INFO] normal - mongodb已连接
+[2014-11-26 09:30:29.052] [INFO] normal - mongodb已连接
+[2014-11-26 09:30:29.806] [INFO] normal - Express server listening on port 3001
+[2014-11-26 09:30:29.805] [ERROR] normal - listening: worker 6832, Address: 0.0.0.0:3001
+[2014-11-26 09:30:29.824] [INFO] normal - mongodb已连接
+[2014-11-26 11:02:57.015] [INFO] normal - mongodb已连接
+[2014-11-26 11:02:57.737] [INFO] normal - Express server listening on port 3001
+[2014-11-26 11:02:57.737] [ERROR] normal - listening: worker 7160, Address: 0.0.0.0:3001
+[2014-11-26 11:02:57.753] [INFO] normal - mongodb已连接
+[2014-11-26 11:03:35.896] [INFO] normal - mongodb已连接
+[2014-11-26 11:03:36.700] [INFO] normal - Express server listening on port 3001
+[2014-11-26 11:03:36.699] [ERROR] normal - listening: worker 7932, Address: 0.0.0.0:3001
+[2014-11-26 11:03:36.716] [INFO] normal - mongodb已连接
+[2014-11-26 11:04:26.385] [INFO] normal - mongodb已连接
+[2014-11-26 11:04:27.134] [INFO] normal - Express server listening on port 3001
+[2014-11-26 11:04:27.134] [ERROR] normal - listening: worker 7648, Address: 0.0.0.0:3001
+[2014-11-26 11:04:27.134] [INFO] normal - mongodb已连接
+[2014-11-26 11:04:46.819] [INFO] normal - mongodb已连接
+[2014-11-26 11:04:47.572] [INFO] normal - Express server listening on port 3001
+[2014-11-26 11:04:47.572] [ERROR] normal - listening: worker 6308, Address: 0.0.0.0:3001
+[2014-11-26 11:04:47.588] [INFO] normal - mongodb已连接
+[2014-11-26 11:05:13.218] [INFO] normal - mongodb已连接
+[2014-11-26 11:05:13.974] [INFO] normal - Express server listening on port 3001
+[2014-11-26 11:05:13.989] [ERROR] normal - listening: worker 6164, Address: 0.0.0.0:3001
+[2014-11-26 11:05:14.005] [INFO] normal - mongodb已连接
+[2014-11-26 11:05:34.534] [INFO] normal - mongodb已连接
+[2014-11-26 11:05:35.275] [INFO] normal - Express server listening on port 3001
+[2014-11-26 11:05:35.274] [ERROR] normal - listening: worker 1940, Address: 0.0.0.0:3001
+[2014-11-26 11:05:35.290] [INFO] normal - mongodb已连接
+[2014-11-26 11:10:22.460] [INFO] normal - mongodb已连接
+[2014-11-26 11:10:23.198] [INFO] normal - Express server listening on port 3001
+[2014-11-26 11:10:23.198] [ERROR] normal - listening: worker 864, Address: 0.0.0.0:3001
+[2014-11-26 11:10:23.198] [INFO] normal - mongodb已连接
+[2014-11-26 11:13:01.513] [INFO] normal - mongodb已连接
+[2014-11-26 11:13:02.276] [INFO] normal - Express server listening on port 3001
+[2014-11-26 11:13:02.292] [ERROR] normal - listening: worker 1000, Address: 0.0.0.0:3001
+[2014-11-26 11:13:02.292] [INFO] normal - mongodb已连接
+[2014-11-26 11:16:41.694] [INFO] normal - mongodb已连接
+[2014-11-26 11:16:42.400] [INFO] normal - Express server listening on port 3001
+[2014-11-26 11:16:42.400] [ERROR] normal - listening: worker 7492, Address: 0.0.0.0:3001
+[2014-11-26 11:16:42.416] [INFO] normal - mongodb已连接

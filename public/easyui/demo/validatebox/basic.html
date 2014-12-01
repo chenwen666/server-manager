@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Basic ValidateBox - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="../../themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../../themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="../demo.css">
+	<script type="text/javascript" src="../../jquery.min.js"></script>
+	<script type="text/javascript" src="../../jquery.easyui.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){  
+             
+        //jquery easyUI的自定义正则      
+			$.extend($.fn.validatebox.defaults.rules, {  
+				usernamePattern: {  
+					validator: function(value, param){  
+						return /[^"&\|:\*\?<>]+/.test(value);
+					},  
+					message: '请输入正确有用户名'  
+				},  
+				  
+				ipPattern: {  
+					validator: function(value){  
+						return /([1-9]|[1-9]\\d|1\\d{2}|2[0-4]\\d|25[0-5])(\\.(\\d|[1-9]\\d|1\\d{2}|2[0-4]\\d|25[0-5])){3}/.test(value);  
+					},  
+					message: '请输入正确的IP地址'  
+				}  
+			 
+			});  
+		});
+	</script>
+</head>
+<body>
+	<h2>Basic ValidateBox</h2>
+	<p>It's easy to add validate logic to a input box.</p>
+	
+	<div style="margin:20px 0;"></div>
+	<div class="easyui-panel" title="Register" style="width:400px;padding:10px 60px 20px 60px">
+		<table cellpadding="5">
+			<tr>
+				<td>User Name:</td>
+				<td><input type="text" class="easyui-validatebox" name="budgetAmount" id="budgetAmountAdd" validType="usernamePattern"  required="true"/></td>
+			</tr>
+			<tr>
+				<td>ip:</td>
+				<td><input class="easyui-validatebox textbox" validType="ipPattern"  required="true"></td>
+			</tr>
+			
+		</table>
+	</div>
+	<style scoped="scoped">
+		.textbox{
+			height:20px;
+			margin:0;
+			padding:0 2px;
+			box-sizing:content-box;
+		}
+	</style>
+
+</body>
+</html>

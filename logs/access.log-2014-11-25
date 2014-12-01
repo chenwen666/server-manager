@@ -1,0 +1,136 @@
+[2014-11-25 09:51:06.271] [INFO] normal - mongodb已连接
+[2014-11-25 09:51:07.045] [INFO] normal - Express server listening on port 3001
+[2014-11-25 09:51:07.046] [ERROR] normal - listening: worker 8304, Address: 0.0.0.0:3001
+[2014-11-25 09:51:07.061] [INFO] normal - mongodb已连接
+[2014-11-25 11:10:39.814] [INFO] normal - mongodb已连接
+[2014-11-25 11:10:40.584] [INFO] normal - Express server listening on port 3001
+[2014-11-25 11:10:40.585] [ERROR] normal - listening: worker 10412, Address: 0.0.0.0:3001
+[2014-11-25 11:10:40.599] [INFO] normal - mongodb已连接
+[2014-11-25 11:12:28.746] [INFO] normal - mongodb已连接
+[2014-11-25 11:12:29.538] [INFO] normal - Express server listening on port 3001
+[2014-11-25 11:12:29.541] [ERROR] normal - listening: worker 7000, Address: 0.0.0.0:3001
+[2014-11-25 11:12:29.554] [INFO] normal - mongodb已连接
+[2014-11-25 11:14:58.448] [INFO] normal - mongodb已连接
+[2014-11-25 11:14:59.211] [INFO] normal - Express server listening on port 3001
+[2014-11-25 11:14:59.213] [ERROR] normal - listening: worker 7272, Address: 0.0.0.0:3001
+[2014-11-25 11:14:59.227] [INFO] normal - mongodb已连接
+[2014-11-25 11:35:29.670] [INFO] normal - mongodb已连接
+[2014-11-25 11:35:30.658] [INFO] normal - Express server listening on port 3001
+[2014-11-25 11:35:30.660] [ERROR] normal - listening: worker 9016, Address: 0.0.0.0:3001
+[2014-11-25 11:35:30.677] [INFO] normal - mongodb已连接
+[2014-11-25 14:09:22.007] [INFO] normal - mongodb已连接
+[2014-11-25 14:09:22.870] [INFO] normal - Express server listening on port 3001
+[2014-11-25 14:09:22.874] [ERROR] normal - listening: worker 1800, Address: 0.0.0.0:3001
+[2014-11-25 14:09:22.886] [INFO] normal - mongodb已连接
+[2014-11-25 14:09:28.298] [ERROR] normal - advert.getPhoto.error:TypeError: Object [object Object] has no method 'hget'
+    at Object.module.exports.getPhoto (E:\workpace\nodejs\server-manager\routes\services\adverService.js:80:15)
+    at getPhoto (E:\workpace\nodejs\server-manager\routes\advertRoute.js:46:23)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at param (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:331:14)
+    at param (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:347:14)
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:391:3)
+[2014-11-25 14:09:28.311] [ERROR] normal - advert.getPhoto.error:TypeError: Object [object Object] has no method 'hget'
+    at Object.module.exports.getPhoto (E:\workpace\nodejs\server-manager\routes\services\adverService.js:80:15)
+    at getPhoto (E:\workpace\nodejs\server-manager\routes\advertRoute.js:46:23)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at param (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:331:14)
+    at param (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:347:14)
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:391:3)
+[2014-11-25 14:11:35.270] [INFO] normal - mongodb已连接
+[2014-11-25 14:11:36.165] [INFO] normal - Express server listening on port 3001
+[2014-11-25 14:11:36.167] [ERROR] normal - listening: worker 1220, Address: 0.0.0.0:3001
+[2014-11-25 14:11:36.183] [INFO] normal - mongodb已连接
+[2014-11-25 14:13:24.121] [INFO] normal - mongodb已连接
+[2014-11-25 14:13:24.944] [INFO] normal - Express server listening on port 3001
+[2014-11-25 14:13:24.946] [ERROR] normal - listening: worker 11592, Address: 0.0.0.0:3001
+[2014-11-25 14:13:24.960] [INFO] normal - mongodb已连接
+[2014-11-25 14:17:42.630] [INFO] normal - mongodb已连接
+[2014-11-25 14:17:43.436] [INFO] normal - Express server listening on port 3001
+[2014-11-25 14:17:43.438] [ERROR] normal - listening: worker 9612, Address: 0.0.0.0:3001
+[2014-11-25 14:17:43.451] [INFO] normal - mongodb已连接
+[2014-11-25 14:19:58.702] [INFO] normal - mongodb已连接
+[2014-11-25 14:19:59.518] [INFO] normal - Express server listening on port 3001
+[2014-11-25 14:19:59.519] [ERROR] normal - listening: worker 2908, Address: 0.0.0.0:3001
+[2014-11-25 14:19:59.533] [INFO] normal - mongodb已连接
+[2014-11-25 14:27:50.079] [INFO] normal - mongodb已连接
+[2014-11-25 14:27:50.882] [INFO] normal - Express server listening on port 3001
+[2014-11-25 14:27:50.883] [ERROR] normal - listening: worker 9904, Address: 0.0.0.0:3001
+[2014-11-25 14:27:50.898] [INFO] normal - mongodb已连接
+[2014-11-25 14:58:50.307] [INFO] normal - mongodb已连接
+[2014-11-25 14:58:51.102] [INFO] normal - Express server listening on port 3001
+[2014-11-25 14:58:51.106] [ERROR] normal - listening: worker 10692, Address: 0.0.0.0:3001
+[2014-11-25 14:58:51.120] [INFO] normal - mongodb已连接
+[2014-11-25 15:10:08.926] [INFO] normal - mongodb已连接
+[2014-11-25 15:10:09.738] [INFO] normal - Express server listening on port 3001
+[2014-11-25 15:10:09.740] [ERROR] normal - listening: worker 2536, Address: 0.0.0.0:3001
+[2014-11-25 15:10:09.755] [INFO] normal - mongodb已连接
+[2014-11-25 15:20:27.088] [INFO] normal - mongodb已连接
+[2014-11-25 15:21:33.267] [INFO] normal - mongodb已连接
+[2014-11-25 15:21:34.108] [INFO] normal - Express server listening on port 3001
+[2014-11-25 15:21:34.111] [ERROR] normal - listening: worker 9412, Address: 0.0.0.0:3001
+[2014-11-25 15:21:34.122] [INFO] normal - mongodb已连接
+[2014-11-25 15:25:35.327] [INFO] normal - mongodb已连接
+[2014-11-25 15:25:44.735] [INFO] normal - mongodb已连接
+[2014-11-25 15:25:45.583] [INFO] normal - Express server listening on port 3001
+[2014-11-25 15:25:45.584] [ERROR] normal - listening: worker 3464, Address: 0.0.0.0:3001
+[2014-11-25 15:25:45.600] [INFO] normal - mongodb已连接
+[2014-11-25 15:26:39.598] [INFO] normal - mongodb已连接
+[2014-11-25 15:26:40.475] [INFO] normal - Express server listening on port 3001
+[2014-11-25 15:26:40.477] [ERROR] normal - listening: worker 1596, Address: 0.0.0.0:3001
+[2014-11-25 15:26:40.491] [INFO] normal - mongodb已连接
+[2014-11-25 15:40:28.920] [INFO] normal - mongodb已连接
+[2014-11-25 15:40:29.777] [INFO] normal - Express server listening on port 3001
+[2014-11-25 15:40:29.781] [ERROR] normal - listening: worker 8644, Address: 0.0.0.0:3001
+[2014-11-25 15:40:29.796] [INFO] normal - mongodb已连接
+[2014-11-25 15:43:41.903] [ERROR] normal - TypeError: Object [object Object] has no method 'hdel'
+    at E:\workpace\nodejs\server-manager\routes\services\adverService.js:98:23
+    at E:\workpace\nodejs\server-manager\node_modules\async\lib\async.js:570:21
+    at E:\workpace\nodejs\server-manager\node_modules\async\lib\async.js:249:17
+    at E:\workpace\nodejs\server-manager\node_modules\async\lib\async.js:125:13
+    at Array.forEach (native)
+    at _each (E:\workpace\nodejs\server-manager\node_modules\async\lib\async.js:46:24)
+    at async.each (E:\workpace\nodejs\server-manager\node_modules\async\lib\async.js:124:9)
+    at _asyncMap (E:\workpace\nodejs\server-manager\node_modules\async\lib\async.js:248:13)
+    at Object.map (E:\workpace\nodejs\server-manager\node_modules\async\lib\async.js:219:23)
+    at _parallel (E:\workpace\nodejs\server-manager\node_modules\async\lib\async.js:568:20)
+[2014-11-25 15:45:56.040] [INFO] normal - mongodb已连接
+[2014-11-25 15:45:56.883] [INFO] normal - Express server listening on port 3001
+[2014-11-25 15:45:56.886] [ERROR] normal - listening: worker 2308, Address: 0.0.0.0:3001
+[2014-11-25 15:45:56.900] [INFO] normal - mongodb已连接
+[2014-11-25 16:00:25.162] [ERROR] normal - worker 2308 died
+[2014-11-25 16:00:26.029] [INFO] normal - Express server listening on port 3001
+[2014-11-25 16:00:26.031] [ERROR] normal - listening: worker 8380, Address: 0.0.0.0:3001
+[2014-11-25 16:00:26.047] [INFO] normal - mongodb已连接
+[2014-11-25 16:00:27.378] [ERROR] normal - worker 8380 died
+[2014-11-25 16:00:28.224] [INFO] normal - Express server listening on port 3001
+[2014-11-25 16:00:28.225] [ERROR] normal - listening: worker 10684, Address: 0.0.0.0:3001
+[2014-11-25 16:00:28.242] [INFO] normal - mongodb已连接
+[2014-11-25 16:00:28.847] [ERROR] normal - worker 10684 died
+[2014-11-25 16:00:29.676] [INFO] normal - Express server listening on port 3001
+[2014-11-25 16:00:29.679] [ERROR] normal - listening: worker 9420, Address: 0.0.0.0:3001
+[2014-11-25 16:00:29.696] [INFO] normal - mongodb已连接
+[2014-11-25 16:00:30.384] [ERROR] normal - worker 9420 died
+[2014-11-25 16:00:31.222] [INFO] normal - Express server listening on port 3001
+[2014-11-25 16:00:31.226] [ERROR] normal - listening: worker 3164, Address: 0.0.0.0:3001
+[2014-11-25 16:00:31.243] [INFO] normal - mongodb已连接
+[2014-11-25 17:31:18.212] [INFO] normal - mongodb已连接
+[2014-11-25 17:31:19.125] [INFO] normal - Express server listening on port 3001
+[2014-11-25 17:31:19.126] [ERROR] normal - listening: worker 592, Address: 0.0.0.0:3001
+[2014-11-25 17:31:19.141] [INFO] normal - mongodb已连接
+[2014-11-25 17:38:56.669] [INFO] normal - mongodb已连接
+[2014-11-25 17:38:57.539] [INFO] normal - Express server listening on port 3001
+[2014-11-25 17:38:57.541] [ERROR] normal - listening: worker 10748, Address: 0.0.0.0:3001
+[2014-11-25 17:38:57.554] [INFO] normal - mongodb已连接
+[2014-11-25 17:41:54.674] [INFO] normal - mongodb已连接
+[2014-11-25 17:43:41.030] [INFO] normal - mongodb已连接
+[2014-11-25 17:43:41.889] [INFO] normal - Express server listening on port 3001
+[2014-11-25 17:43:41.891] [ERROR] normal - listening: worker 6868, Address: 0.0.0.0:3001
+[2014-11-25 17:43:41.904] [INFO] normal - mongodb已连接

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<ul id="tt" class="easyui-tree">
+    <%if(type==1){%>
+    <li>
+        <span>商家管理</span>
+        <ul>
+
+            <li>
+                <span>我的广告<span style="visibility:hidden">/advert/list</span></span>
+            </li>
+            <li>
+                <span>商家信息</span>
+            </li>
+        </ul>
+    </li>
+    <%}else{%>
+    <li>
+        <span>用户管理</span>
+        <ul>
+            <li>
+                <span>权限管理<span style="visibility:hidden">/user/list</span></span>
+            </li>
+        </ul>
+    </li>
+    <%}%>
+</ul>
+</body>
+</html>

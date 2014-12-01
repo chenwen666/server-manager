@@ -1,0 +1,65 @@
+[2014-11-27 14:37:53.736] [INFO] normal - mongodb已连接
+[2014-11-27 14:37:54.546] [INFO] normal - Express server listening on port 3001
+[2014-11-27 14:37:54.549] [ERROR] normal - listening: worker 4104, Address: 0.0.0.0:3001
+[2014-11-27 14:37:54.564] [INFO] normal - mongodb已连接
+[2014-11-27 18:03:48.380] [ERROR] normal - worker 4104 died
+[2014-11-27 18:03:51.157] [ERROR] normal - 连接mongodb数据库失败:Error: failed to connect to [127.0.0.1:27017]
+    at null.<anonymous> (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:549:74)
+    at emit (events.js:106:17)
+    at null.<anonymous> (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:150:15)
+    at emit (events.js:98:17)
+    at Socket.<anonymous> (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:533:10)
+    at Socket.emit (events.js:95:17)
+    at net.js:440:14
+    at process._tickCallback (node.js:419:13)
+[2014-11-27 18:03:51.250] [ERROR] normal - worker 7760 died
+[2014-11-27 18:03:51.644] [ERROR] normal - worker 9528 died
+[2014-11-27 18:03:51.663] [ERROR] normal - worker 9856 died
+[2014-11-27 18:03:51.680] [ERROR] normal - worker 10676 died
+[2014-11-27 18:03:51.698] [ERROR] normal - worker 7112 died
+[2014-11-27 18:03:51.717] [ERROR] normal - worker 6460 died
+[2014-11-27 18:03:51.734] [ERROR] normal - worker 8224 died
+[2014-11-27 18:03:51.782] [ERROR] normal - worker 4784 died
+[2014-11-27 18:03:51.835] [ERROR] normal - worker 2336 died
+[2014-11-27 18:03:51.860] [ERROR] normal - worker 10584 died
+[2014-11-27 18:03:51.877] [ERROR] normal - worker 8156 died
+[2014-11-27 18:03:51.893] [ERROR] normal - worker 5236 died
+[2014-11-27 18:03:51.935] [ERROR] normal - worker 9496 died
+[2014-11-27 18:03:51.951] [ERROR] normal - worker 7040 died
+[2014-11-27 18:03:51.967] [ERROR] normal - worker 4172 died
+[2014-11-27 18:03:51.982] [ERROR] normal - worker 3864 died
+[2014-11-27 18:03:52.013] [ERROR] normal - worker 4088 died
+[2014-11-27 18:03:52.029] [ERROR] normal - worker 4240 died
+[2014-11-27 18:03:52.076] [ERROR] normal - worker 2684 died
+[2014-11-27 18:03:52.154] [ERROR] normal - worker 9556 died
+[2014-11-27 18:03:52.170] [ERROR] normal - worker 8144 died
+[2014-11-27 18:03:52.201] [ERROR] normal - worker 4200 died
+[2014-11-27 18:03:52.217] [ERROR] normal - worker 1924 died
+[2014-11-27 18:03:52.263] [ERROR] normal - worker 5952 died
+[2014-11-27 18:03:52.279] [ERROR] normal - worker 3284 died
+[2014-11-27 18:03:52.295] [ERROR] normal - worker 6464 died
+[2014-11-27 18:03:52.326] [ERROR] normal - worker 1564 died
+[2014-11-27 18:03:52.342] [ERROR] normal - worker 6432 died
+[2014-11-27 18:03:52.357] [ERROR] normal - worker 5348 died
+[2014-11-27 18:03:52.373] [ERROR] normal - worker 2952 died
+[2014-11-27 18:03:52.388] [ERROR] normal - worker 10628 died
+[2014-11-27 18:03:52.420] [ERROR] normal - worker 9756 died
+[2014-11-27 18:03:52.435] [ERROR] normal - worker 10068 died
+[2014-11-27 18:03:52.451] [ERROR] normal - worker 4516 died
+[2014-11-27 18:03:52.467] [ERROR] normal - worker 4264 died
+[2014-11-27 18:03:52.482] [ERROR] normal - worker 5912 died
+[2014-11-27 18:03:52.498] [ERROR] normal - worker 8064 died
+[2014-11-27 18:03:52.732] [ERROR] normal - worker 7288 died
+[2014-11-27 18:03:53.076] [ERROR] normal - worker 8780 died
+[2014-11-27 18:03:53.092] [ERROR] normal - worker 9732 died
+[2014-11-27 18:03:53.123] [ERROR] normal - worker 4504 died
+[2014-11-27 18:03:53.170] [ERROR] normal - 连接mongodb数据库失败:Error: failed to connect to [127.0.0.1:27017]
+    at null.<anonymous> (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:549:74)
+    at emit (events.js:106:17)
+    at null.<anonymous> (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:150:15)
+    at emit (events.js:98:17)
+    at Socket.<anonymous> (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:533:10)
+    at Socket.emit (events.js:95:17)
+    at net.js:440:14
+    at process._tickCallback (node.js:419:13)
+[2014-11-27 18:03:53.201] [ERROR] normal - worker 532 died

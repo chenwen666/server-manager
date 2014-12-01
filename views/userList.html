@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="/easyui/themes/icon.css">
+    <script type="text/javascript" src="/javascripts/jquery.js"></script>
+    <script type="text/javascript" src="/easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="/easyui/locale/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript" src="/javascripts/controller/baseController.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <style>
+
+    </style>
+    <script type="text/javascript">
+        function search(){
+            var username = $("#username").val();
+            var mobile = $("#mobile").val();
+            var sex = $("#sex").val();
+            var email = $("#email").val();
+            var type = $("#type").val();
+            var query = {
+                FILTER_LIKE_u:username,
+                FILTER_LIKE_m:mobile,
+                FILTER_EQI_g : sex,
+                FILTER_LIKE_em: email,
+                FILTER_EQI_tp: type
+            };
+            $("#table").datagrid("options").queryParams = query;
+            $("#table").datagrid("reload");
+        }
+        function showAll(){
+            $("#username").val("");
+            $("#mobile").val("");
+            $("#email").val("");
+            $("#table").datagrid("options").queryParams = {};
+            $("#table").datagrid("reload");
+        }
+    </script>
+</head>
+<body>
+<table class="tab">
+    <tr>
+        <td align="center" class="bg06" width="15%">
+            <span class="zi5">快速搜索:</span>
+        </td>
+        <td class="bg05">
+            <table class="table-list-form">
+                <tr>
+                    <td align="right">
+                        <span>用户名</span>
+                    </td>
+                    <td >
+                        <input  type="text"  name="username" id="username" height="15px;" value=""/>
+                    </td>
+                    <td align="right" >
+                        <span>手机</span>
+                    </td>
+                    <td>
+                        <input  type="text"  name="mobile" id="mobile" height="15px;" value=""/>
+                    </td>
+                    <td align="right" >
+                        <span>性别</span>
+                    </td>
+                    <td>
+                        <select name="sex" style="width: 70px" id="sex">
+                            <option value="all">所有</option>
+                            <option value="0">男</option>
+                            <option value="1">女</option>
+                        </select>
+                    </td>
+                    <td rowspan="2" align="center" style="padding-left:20px;padding-right: 20px;">
+                        <a id="btn" href="javascript:search()"  class="easyui-linkbutton"
+                           data-options="iconCls:'icon-search'">搜索</a>
+                        <a id="" href="javascript:showAll()"  class="easyui-linkbutton"
+                           data-options="iconCls:''">显示所有</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span>邮箱</span>
+                    </td>
+                    <td >
+                        <input  type="text"  name="email" id="email" height="15px;" value=""/>
+                    </td>
+                    <td align="right" >
+                        <span>用户类型</span>
+                    </td>
+                    <td>
+                        <select name="type" style="width: 150px" id="type" >
+                            <option value="all">所有用户</option>
+                            <option value="0">普通用户</option>
+                            <option value="1">商家</option>
+                            <option value="2">管理员</option>
+                            <option value="3">超级管理员</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+</table>
+<div style="margin:10px 0;"></div>
+<table id="table"></table>
+
+<div id="tb" style="height:auto">
+    <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true"
+       onclick="toUpdate('/user/update/type')">修改权限</a>
+</div>
+<div>
+    <%include dialog.html %>
+</div>
+<script type="text/javascript">
+    $('#table').datagrid({
+        url:'/user/list',
+        striped : true,
+        fitColumns : true,
+        autoRowHeight : true,
+        pagination : true,
+        nowrap : false,
+        toolbar : "#tb",
+        columns:[[
+            {field:"check",checkbox : true,width:60},
+            {field:"id",title:"ID",width:80},
+            {field:"username",title:"用户名",width:80},
+            {field:"gender",title:"性别",width:50,formatter: function(value,row,index){
+                if(value==0){
+                    return "男"
+                }else{
+                    return "女"
+                }
+                return value;
+            }},
+            {field:'mobile',title:'手机',width:100},
+            {field:'email',title:"邮箱",width:100},
+            {field:'type',title:"用户类型",width:60,formatter : function(value){
+                if(value == 0){
+                    return "普通会员"
+                }
+                if(value == 1){
+                    return "商家"
+                }
+                if(value == 2){
+                    return "管理员"
+                }
+                if(value == 3){
+                    return "超级管理员"
+                }
+            }}
+        ]]
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+[2014-11-24 09:23:11.812] [INFO] normal - mongodb已连接
+[2014-11-24 09:49:15.032] [INFO] normal - mongodb已连接
+[2014-11-24 10:03:32.603] [INFO] normal - mongodb已连接
+[2014-11-24 10:05:06.541] [INFO] normal - mongodb已连接
+[2014-11-24 10:08:42.346] [INFO] normal - mongodb已连接
+[2014-11-24 10:09:03.899] [INFO] normal - mongodb已连接
+[2014-11-24 10:16:33.310] [INFO] normal - mongodb已连接
+[2014-11-24 10:17:43.109] [INFO] normal - mongodb已连接
+[2014-11-24 10:19:48.822] [INFO] normal - mongodb已连接
+[2014-11-24 10:21:15.189] [INFO] normal - mongodb已连接
+[2014-11-24 10:21:47.176] [INFO] normal - mongodb已连接
+[2014-11-24 10:22:21.398] [INFO] normal - mongodb已连接
+[2014-11-24 10:23:08.359] [INFO] normal - mongodb已连接
+[2014-11-24 10:29:03.809] [INFO] normal - mongodb已连接
+[2014-11-24 10:34:11.693] [INFO] normal - mongodb已连接
+[2014-11-24 10:37:11.511] [INFO] normal - mongodb已连接
+[2014-11-24 10:37:25.065] [INFO] normal - mongodb已连接
+[2014-11-24 10:43:38.069] [INFO] normal - mongodb已连接
+[2014-11-24 10:46:15.349] [INFO] normal - mongodb已连接
+[2014-11-24 10:59:47.239] [INFO] normal - mongodb已连接
+[2014-11-24 11:03:41.240] [INFO] normal - mongodb已连接
+[2014-11-24 11:08:52.979] [INFO] normal - mongodb已连接
+[2014-11-24 11:17:33.906] [INFO] normal - mongodb已连接
+[2014-11-24 11:19:58.836] [INFO] normal - mongodb已连接
+[2014-11-24 11:20:58.077] [INFO] normal - mongodb已连接
+[2014-11-24 11:21:05.320] [INFO] normal - mongodb已连接
+[2014-11-24 11:21:40.479] [INFO] normal - mongodb已连接
+[2014-11-24 11:22:34.393] [INFO] normal - mongodb已连接
+[2014-11-24 11:24:53.499] [INFO] normal - mongodb已连接
+[2014-11-24 11:25:34.826] [INFO] normal - mongodb已连接
+[2014-11-24 11:26:32.892] [INFO] normal - mongodb已连接
+[2014-11-24 11:29:16.630] [INFO] normal - mongodb已连接
+[2014-11-24 11:30:40.904] [INFO] normal - mongodb已连接
+[2014-11-24 11:31:35.575] [INFO] normal - mongodb已连接
+[2014-11-24 11:32:12.702] [INFO] normal - mongodb已连接
+[2014-11-24 11:34:11.171] [INFO] normal - mongodb已连接
+[2014-11-24 11:34:21.340] [ERROR] normal - 保存广告错误:Error: ENOENT, no such file or directory 'E:\adverImage\chenwen\f6266d8a153f57b843db05c0fc30aa85bfdcfb5e.jpg'
+    at Object.fs.unlinkSync (fs.js:771:18)
+    at update (E:\workpace\nodejs\server-manager\routes\advertRoute.js:108:12)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:312:12)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:295:3)
+[2014-11-24 11:36:43.392] [INFO] normal - mongodb已连接
+[2014-11-24 11:37:05.551] [ERROR] normal - 保存广告错误:Error: ENOENT, no such file or directory 'E:\adverImage\chenwen\f169dacf5f9cdce461997d307d6f6b4a48065273.jpg'
+    at Object.fs.rmdirSync (fs.js:623:18)
+    at update (E:\workpace\nodejs\server-manager\routes\advertRoute.js:108:12)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:312:12)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:295:3)
+[2014-11-24 11:37:33.624] [INFO] normal - mongodb已连接
+[2014-11-24 11:37:43.982] [ERROR] normal - 保存广告错误:Error: ENOENT, no such file or directory 'E:\adverImage\chenwen\f169dacf5f9cdce461997d307d6f6b4a48065273.jpg'
+    at Object.fs.rmdirSync (fs.js:623:18)
+    at update (E:\workpace\nodejs\server-manager\routes\advertRoute.js:109:12)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:312:12)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:295:3)
+[2014-11-24 11:39:10.910] [INFO] normal - mongodb已连接
+[2014-11-24 11:40:01.446] [ERROR] normal - 保存广告错误:Error: ENOENT, no such file or directory 'E:\workpace\nodejs\server-manager\uploads\11632-16iigh8.jpg'
+    at Object.fs.unlinkSync (fs.js:771:18)
+    at update (E:\workpace\nodejs\server-manager\routes\advertRoute.js:109:12)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:312:12)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:295:3)
+[2014-11-24 11:40:39.265] [INFO] normal - mongodb已连接
+[2014-11-24 11:40:48.287] [ERROR] normal - 保存广告错误:Error: ENOENT, no such file or directory 'E:\adverImage\chenwen\a24cc49df213a739f55a86bf9d9247b8dd048fe2.jpg'
+    at Object.fs.unlinkSync (fs.js:771:18)
+    at update (E:\workpace\nodejs\server-manager\routes\advertRoute.js:109:12)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:312:12)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:295:3)
+[2014-11-24 11:41:30.627] [ERROR] normal - 保存广告错误:Error: ENOENT, no such file or directory 'E:\adverImage\chenwen\a24cc49df213a739f55a86bf9d9247b8dd048fe2.jpg'
+    at Object.fs.unlinkSync (fs.js:771:18)
+    at update (E:\workpace\nodejs\server-manager\routes\advertRoute.js:109:12)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:312:12)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:295:3)
+[2014-11-24 11:42:26.552] [INFO] normal - mongodb已连接
+[2014-11-24 11:42:37.827] [ERROR] normal - 保存广告错误:TypeError: Object #<IncomingMessage> has no method 'end'
+    at E:\workpace\nodejs\server-manager\routes\advertRoute.js:117:17
+    at Query.update (E:\workpace\nodejs\server-manager\node_modules\mongoose\lib\query.js:1735:7)
+    at Function.update (E:\workpace\nodejs\server-manager\node_modules\mongoose\lib\model.js:1628:13)
+    at Object.defineProperties.update.value (E:\workpace\nodejs\server-manager\routes\lib\AggregateDao.js:188:25)
+    at Object.module.exports.update (E:\workpace\nodejs\server-manager\routes\services\adverService.js:60:15)
+    at update (E:\workpace\nodejs\server-manager\routes\advertRoute.js:116:23)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+[2014-11-24 11:43:35.657] [INFO] normal - mongodb已连接
+[2014-11-24 11:44:04.819] [ERROR] normal - 保存广告错误:Error: ENOENT, no such file or directory 'E:\workpace\nodejs\server-manager\public\adverImage\chenwen\a24cc49df213a739f55a86bf9d9247b8dd048fe2.jpg'
+    at Object.fs.unlinkSync (fs.js:771:18)
+    at update (E:\workpace\nodejs\server-manager\routes\advertRoute.js:110:12)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:312:12)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:295:3)
+[2014-11-24 12:12:14.738] [INFO] normal - mongodb已连接
+[2014-11-24 12:14:32.018] [INFO] normal - mongodb已连接
+[2014-11-24 12:15:06.184] [INFO] normal - mongodb已连接
+[2014-11-24 12:16:31.382] [INFO] normal - mongodb已连接
+[2014-11-24 12:18:02.045] [INFO] normal - mongodb已连接
+[2014-11-24 12:53:21.869] [INFO] normal - mongodb已连接
+[2014-11-24 12:54:34.415] [INFO] normal - mongodb已连接
+[2014-11-24 12:55:24.007] [INFO] normal - mongodb已连接
+[2014-11-24 12:56:13.522] [INFO] normal - mongodb已连接
+[2014-11-24 12:57:05.156] [INFO] normal - mongodb已连接
+[2014-11-24 12:59:25.701] [INFO] normal - mongodb已连接
+[2014-11-24 13:02:08.748] [INFO] normal - mongodb已连接
+[2014-11-24 13:02:14.834] [ERROR] normal - SyntaxError: Unexpected token u
+    at Object.parse (native)
+    at del (E:\workpace\nodejs\server-manager\routes\advertRoute.js:165:24)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:312:12)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:295:3)
+[2014-11-24 13:02:58.248] [INFO] normal - mongodb已连接
+[2014-11-24 13:03:25.701] [INFO] normal - mongodb已连接
+[2014-11-24 13:03:31.193] [ERROR] normal - SyntaxError: Unexpected token u
+    at Object.parse (native)
+    at del (E:\workpace\nodejs\server-manager\routes\advertRoute.js:167:27)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:312:12)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:295:3)
+[2014-11-24 13:04:35.976] [INFO] normal - mongodb已连接
+[2014-11-24 13:04:41.180] [ERROR] normal - dao.remove.error:TypeError: Object ["5472a876ed2f00702d951948"] has no method 'map'
+    at ObjectId.handleArray (E:\workpace\nodejs\server-manager\node_modules\mongoose\lib\schema\objectid.js:133:14)
+    at ObjectId.castForQuery (E:\workpace\nodejs\server-manager\node_modules\mongoose\lib\schema\objectid.js:163:20)
+    at Query.cast (E:\workpace\nodejs\server-manager\node_modules\mongoose\lib\query.js:2331:39)
+    at Query.remove (E:\workpace\nodejs\server-manager\node_modules\mongoose\lib\query.js:1366:10)
+    at Function.remove (E:\workpace\nodejs\server-manager\node_modules\mongoose\lib\model.js:889:13)
+    at Object.defineProperties.remove.value (E:\workpace\nodejs\server-manager\routes\lib\AggregateDao.js:151:25)
+    at Object.module.exports.del (E:\workpace\nodejs\server-manager\routes\services\adverService.js:66:15)
+    at async.parallel.cwd (E:\workpace\nodejs\server-manager\routes\advertRoute.js:169:27)
+    at E:\workpace\nodejs\server-manager\node_modules\async\lib\async.js:570:21
+    at E:\workpace\nodejs\server-manager\node_modules\async\lib\async.js:249:17
+[2014-11-24 13:04:41.180] [ERROR] normal - TypeError: Object ["5472a876ed2f00702d951948"] has no method 'map'
+    at ObjectId.handleArray (E:\workpace\nodejs\server-manager\node_modules\mongoose\lib\schema\objectid.js:133:14)
+    at ObjectId.castForQuery (E:\workpace\nodejs\server-manager\node_modules\mongoose\lib\schema\objectid.js:163:20)
+    at Query.cast (E:\workpace\nodejs\server-manager\node_modules\mongoose\lib\query.js:2331:39)
+    at Query.remove (E:\workpace\nodejs\server-manager\node_modules\mongoose\lib\query.js:1366:10)
+    at Function.remove (E:\workpace\nodejs\server-manager\node_modules\mongoose\lib\model.js:889:13)
+    at Object.defineProperties.remove.value (E:\workpace\nodejs\server-manager\routes\lib\AggregateDao.js:151:25)
+    at Object.module.exports.del (E:\workpace\nodejs\server-manager\routes\services\adverService.js:66:15)
+    at async.parallel.cwd (E:\workpace\nodejs\server-manager\routes\advertRoute.js:169:27)
+    at E:\workpace\nodejs\server-manager\node_modules\async\lib\async.js:570:21
+    at E:\workpace\nodejs\server-manager\node_modules\async\lib\async.js:249:17
+[2014-11-24 13:06:50.270] [INFO] normal - mongodb已连接
+[2014-11-24 13:06:56.964] [ERROR] normal - dao.remove.error:MongoError: unknown top level operator: $in
+    at Object.toError (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\utils.js:114:11)
+    at E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\collection\core.js:346:27
+    at E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\db.js:1157:7
+    at E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\db.js:1890:9
+    at Server.Base._callHandler (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\base.js:448:41)
+    at E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:481:18
+    at MongoReply.parseBody (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\responses\mongo_reply.js:68:5)
+    at null.<anonymous> (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:439:20)
+    at emit (events.js:95:17)
+    at null.<anonymous> (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:201:13)
+[2014-11-24 13:06:56.964] [ERROR] normal - MongoError: unknown top level operator: $in
+    at Object.toError (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\utils.js:114:11)
+    at E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\collection\core.js:346:27
+    at E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\db.js:1157:7
+    at E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\db.js:1890:9
+    at Server.Base._callHandler (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\base.js:448:41)
+    at E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:481:18
+    at MongoReply.parseBody (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\responses\mongo_reply.js:68:5)
+    at null.<anonymous> (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:439:20)
+    at emit (events.js:95:17)
+    at null.<anonymous> (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:201:13)
+[2014-11-24 13:07:20.987] [INFO] normal - mongodb已连接
+[2014-11-24 13:30:18.110] [INFO] normal - mongodb已连接
+[2014-11-24 13:31:39.106] [INFO] normal - mongodb已连接
+[2014-11-24 13:34:17.534] [INFO] normal - mongodb已连接
+[2014-11-24 13:36:59.516] [INFO] normal - mongodb已连接
+[2014-11-24 13:37:30.896] [INFO] normal - mongodb已连接
+[2014-11-24 13:45:04.406] [INFO] normal - mongodb已连接
+[2014-11-24 13:45:39.848] [INFO] normal - mongodb已连接
+[2014-11-24 13:59:42.327] [INFO] normal - mongodb已连接
+[2014-11-24 14:01:37.404] [INFO] normal - mongodb已连接
+[2014-11-24 14:02:28.793] [INFO] normal - mongodb已连接
+[2014-11-24 14:02:58.051] [INFO] normal - mongodb已连接
+[2014-11-24 14:03:29.209] [INFO] normal - mongodb已连接
+[2014-11-24 14:03:55.059] [INFO] normal - mongodb已连接
+[2014-11-24 14:04:12.750] [INFO] normal - mongodb已连接
+[2014-11-24 14:06:56.889] [INFO] normal - mongodb已连接
+[2014-11-24 14:21:36.899] [INFO] normal - mongodb已连接
+[2014-11-24 14:35:31.601] [INFO] normal - mongodb已连接
+[2014-11-24 14:40:07.489] [INFO] normal - mongodb已连接
+[2014-11-24 14:42:46.888] [INFO] normal - mongodb已连接
+[2014-11-24 14:43:09.516] [INFO] normal - mongodb已连接
+[2014-11-24 14:44:26.098] [INFO] normal - mongodb已连接
+[2014-11-24 14:45:08.491] [INFO] normal - mongodb已连接
+[2014-11-24 14:45:36.283] [INFO] normal - mongodb已连接
+[2014-11-24 14:46:49.158] [INFO] normal - mongodb已连接
+[2014-11-24 14:47:10.888] [INFO] normal - mongodb已连接
+[2014-11-24 14:50:24.342] [INFO] normal - mongodb已连接
+[2014-11-24 14:55:16.170] [INFO] normal - mongodb已连接
+[2014-11-24 14:58:39.564] [INFO] normal - mongodb已连接
+[2014-11-24 14:59:46.613] [INFO] normal - mongodb已连接
+[2014-11-24 15:00:22.369] [INFO] normal - mongodb已连接
+[2014-11-24 15:00:35.710] [INFO] normal - mongodb已连接
+[2014-11-24 15:04:49.087] [INFO] normal - mongodb已连接
+[2014-11-24 15:11:54.772] [INFO] normal - mongodb已连接
+[2014-11-24 15:21:53.526] [INFO] normal - mongodb已连接
+[2014-11-24 15:28:25.246] [INFO] normal - mongodb已连接
+[2014-11-24 15:29:41.718] [INFO] normal - mongodb已连接
+[2014-11-24 15:30:00.793] [ERROR] normal - ReferenceError: ty is not defined
+    at authority (E:\workpace\nodejs\server-manager\routes\userRoute.js:91:24)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:312:12)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:295:3)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:189:10)
+[2014-11-24 15:30:13.012] [INFO] normal - mongodb已连接
+[2014-11-24 15:30:56.974] [INFO] normal - mongodb已连接
+[2014-11-24 15:33:07.599] [INFO] normal - mongodb已连接
+[2014-11-24 15:47:16.957] [INFO] normal - mongodb已连接
+[2014-11-24 15:48:46.621] [INFO] normal - mongodb已连接
+[2014-11-24 15:49:50.907] [INFO] normal - mongodb已连接
+[2014-11-24 15:50:38.576] [INFO] normal - mongodb已连接
+[2014-11-24 15:51:34.527] [INFO] normal - mongodb已连接
+[2014-11-24 15:52:08.670] [INFO] normal - mongodb已连接
+[2014-11-24 15:53:57.247] [INFO] normal - mongodb已连接
+[2014-11-24 15:55:12.215] [INFO] normal - mongodb已连接
+[2014-11-24 15:57:17.865] [INFO] normal - mongodb已连接
+[2014-11-24 16:00:54.177] [INFO] normal - mongodb已连接
+[2014-11-24 16:02:27.029] [INFO] normal - mongodb已连接
+[2014-11-24 16:04:06.402] [INFO] normal - mongodb已连接
+[2014-11-24 16:05:27.190] [INFO] normal - mongodb已连接
+[2014-11-24 16:06:41.417] [INFO] normal - mongodb已连接
+[2014-11-24 16:07:17.502] [INFO] normal - mongodb已连接
+[2014-11-24 16:11:40.414] [INFO] normal - mongodb已连接
+[2014-11-24 16:17:49.342] [INFO] normal - mongodb已连接
+[2014-11-24 16:19:25.966] [INFO] normal - mongodb已连接
+[2014-11-24 16:20:15.917] [INFO] normal - mongodb已连接
+[2014-11-24 16:20:54.791] [INFO] normal - mongodb已连接
+[2014-11-24 16:22:19.158] [INFO] normal - mongodb已连接
+[2014-11-24 16:24:02.331] [INFO] normal - mongodb已连接
+[2014-11-24 16:24:23.352] [INFO] normal - mongodb已连接
+[2014-11-24 16:25:27.316] [INFO] normal - mongodb已连接
+[2014-11-24 16:26:04.207] [INFO] normal - mongodb已连接
+[2014-11-24 16:33:29.006] [INFO] normal - mongodb已连接
+[2014-11-24 16:39:07.985] [INFO] normal - mongodb已连接
+[2014-11-24 16:39:08.800] [INFO] normal - mongodb已连接
+[2014-11-24 16:43:41.245] [INFO] normal - mongodb已连接
+[2014-11-24 16:43:58.683] [INFO] normal - mongodb已连接
+[2014-11-24 16:44:33.992] [INFO] normal - mongodb已连接
+[2014-11-24 16:44:34.739] [INFO] normal - Express server listening on port 3001
+[2014-11-24 16:44:34.740] [ERROR] normal - listening: worker 468, Address: 0.0.0.0:3001
+[2014-11-24 16:44:34.755] [INFO] normal - mongodb已连接
+[2014-11-24 17:04:38.242] [INFO] normal - mongodb已连接
+[2014-11-24 17:07:49.024] [INFO] normal - mongodb已连接
+[2014-11-24 17:08:32.450] [INFO] normal - mongodb已连接
+[2014-11-24 17:08:33.245] [INFO] normal - Express server listening on port 3001
+[2014-11-24 17:08:33.247] [ERROR] normal - listening: worker 6728, Address: 0.0.0.0:3001
+[2014-11-24 17:08:33.262] [INFO] normal - mongodb已连接
+[2014-11-24 17:17:16.611] [INFO] normal - mongodb已连接
+[2014-11-24 17:17:17.424] [INFO] normal - Express server listening on port 3001
+[2014-11-24 17:17:17.427] [ERROR] normal - listening: worker 1656, Address: 0.0.0.0:3001
+[2014-11-24 17:17:17.441] [INFO] normal - mongodb已连接
