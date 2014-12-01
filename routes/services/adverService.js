@@ -44,10 +44,18 @@ module.exports.save = function(obj ,cb){
         }
     },function(code,callback){
         if(code != Code.OK) return callback(null, code);
-        advertDao.hset(SystemConfig.REDIS_ADVERT_IMAGE_KEY,obj.p,obj.d, function(err){
-            if(err) return callback(err,Code.SYSTEM_ERROR);
-            callback(null,Code.OK);
-        });
+        async.parallel([function(callback){
+            advertDao.hset(SystemConfig.REDIS_REDUCE_KEY,obj.p,obj.pd, function(err){
+                if(err) return callback(err,Code.SYSTEM_ERROR);
+                callback(null,Code.OK);
+            });
+        },function(callback){
+            advertDao.hset(SystemConfig.REDIS_ADVERT_IMAGE_KEY,obj.p,obj.urd, function(err){
+                if(err) return callback(err,Code.SYSTEM_ERROR);
+                callback(null,Code.OK);
+            });
+        }],callback)
+
     }],cb)
 }
 /**
@@ -68,7 +76,11 @@ module.exports.update = function(id ,path,obj,cb){
     async.parallel([function(callback){
         advertDao.update({_id:id},obj,callback);
     },function(callback){
-        advertDao.hset(SystemConfig.REDIS_ADVERT_IMAGE_KEY, path, obj.d, callback);
+        async.parallel([function(callback){
+            advertDao.hset(SystemConfig.REDIS_REDUCE_KEY,path,obj.pd, callback);
+        },function(callback){
+            advertDao.hset(SystemConfig.REDIS_ADVERT_IMAGE_KEY,path,obj.urd, callback);
+        }],callback)
     }],cb)
 }
 /**
@@ -86,7 +98,7 @@ module.exports.setContent = function(id, obj, cb){
  * @param cb
  */
 module.exports.getPhoto = function(path, cb){
-    advertDao.hget(SystemConfig.REDIS_ADVERT_IMAGE_KEY,path,cb);
+    advertDao.hget(SystemConfig.REDIS_REDUCE_KEY,path,cb);
 }
 
 module.exports.del = function(ids,photos, cb){

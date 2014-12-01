@@ -13,6 +13,8 @@ var fs = require("fs");
 var propertyFilter = require("./lib/PropertyFilter");
 
 var User = require("./domain/User");
+
+var im = require("imagemagick");
 /* GET home page. */
 
 router.use(function(req, res, next){
@@ -76,22 +78,45 @@ function toAdd(req, res, next){
         message : ""
     });
 }
-
+/**
+ * 添加广告
+ * @param req
+ * @param res
+ * @param next
+ * @returns {*}
+ */
 function add(req, res, next){
     try {
         if(!req.session.user) return res.redirect("/");
         var username = req.session.user.u;
         var tmpPath = req.files.file.path;
+        var suffix = tmpPath.split(".")[1];
+        var reducePath = getReducePath(req.session.user.u,suffix);
         var fileName = requestUtils.generateId(tmpPath);
-        var data = fs.readFileSync(tmpPath);
-        var buff = new Buffer(data,'base64');
-        fs.unlinkSync(tmpPath);
-        advertService.save({
-            u : username,
-            c : req.body.content,
-            p : fileName,
-            d : buff
-        },function(err){
+        async.waterfall([function(callback){
+            im.resize({
+                srcPath :tmpPath,
+                dstPath : reducePath,
+                width : 300,
+                quality : 1
+            },function(err){
+                callback(err);
+            })
+        },function(callback){
+            var data = fs.readFileSync(tmpPath);
+            var buff = new Buffer(data,'base64');
+            var data1 = fs.readFileSync(reducePath);
+            var buff1 = new Buffer(data1,'base64');
+            fs.unlinkSync(tmpPath);
+            fs.unlinkSync(reducePath);
+            advertService.save({
+                u : username,
+                c : req.body.content,
+                p : fileName, //yasuo
+                pd : buff1,    //yasuo
+                urd : buff     //yuantu
+            },callback);
+        }],function(err){
             if(err) return next(err);
             res.end();
         })
@@ -109,15 +134,32 @@ function update(req, res, next){
         var tmpPath = req.files.file.path;
         var oldpath = req.body.oldpath.split(".")[0];
         var id = req.body._id;
-        var data = fs.readFileSync(tmpPath);
-        var buff=new Buffer(data,'base64');
-        var obj = {
-            c : req.body.content,
-            d : data
-        }
-        advertService.update(id,oldpath,obj, function(err){
+        var reducePath = getReducePath(req.session.user.u);
+        async.waterfall([function(callback){
+            im.resize({
+                srcPath :tmpPath,
+                dstPath : reducePath,
+                width : 300,
+                quality : 1
+            },function(err){
+                callback(err);
+            })
+        },function(callback){
+            var data = fs.readFileSync(tmpPath);
+            var buff=new Buffer(data,'base64');
+            var reduceData = fs.readFileSync(reducePath);
+            var reduceBuffer = new Buffer(reduceData,"base64");
+            fs.unlinkSync(tmpPath);
+            fs.unlinkSync(reducePath);
+            var obj = {
+                c : req.body.content,
+                pd : reduceBuffer,
+                urd : buff
+            }
+            advertService.update(id,oldpath,obj, callback);
+        }],function(err){
             res.end();
-        });
+        })
     }catch(err){
         log.error("保存广告错误:"+err.stack);
         res.render("addAdvert",{
@@ -173,5 +215,9 @@ function del(req, res, next){
         log.error(err.stack);
         next(err);
     }
+}
+
+function getReducePath(username,suffix){
+    return "uploads/"+username+new Date().getTime()+"."+suffix;
 }
 module.exports = router;

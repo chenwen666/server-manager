@@ -11,7 +11,7 @@ var Schema = mongoose.Schema;
 var AdvertSchema = new Schema({
     "u" : String, //用户名
     "c": String, //string 内容
-    "p": String, //整数 图片地焉
+    "p": String, // 图片地焉
     "pid" : String  //场景ID
 });
 var AdverModel = db.model("advert",AdvertSchema);
