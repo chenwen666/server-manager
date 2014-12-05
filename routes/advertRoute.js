@@ -78,6 +78,19 @@ function toAdd(req, res, next){
         message : ""
     });
 }
+function buffers(path, req, cb){
+    async.parallel([function(callback){//原图
+        getPhotoBuffer(path,req.body,callback);
+    },function(callback){ //中图
+        sharp(path).extract(req.body.y1,req.body.x1,req.body.w,req.body.h).resize(256,256).toBuffer(function(err, buffer){//exrtact 参数 top left width height
+            callback(err, buffer);
+        })
+    },function(callback){ //小图
+        sharp(path).extract(req.body.y1,req.body.x1,req.body.w,req.body.h).resize(64,64).toBuffer(function(err, buffer){
+            callback(err, buffer);
+        })
+    }],cb)
+}
 /**
  * 添加广告
  * @param req
@@ -124,20 +137,6 @@ function add(req, res, next){
         });
     }
 }
-function buffers(path, req, cb){
-    async.parallel([function(callback){//原图
-        getPhotoBuffer(path,req.body,callback);
-    },function(callback){ //中图
-        sharp(path).extract(req.body.y1,req.body.x1,req.body.w,req.body.h).resize(256,256).toBuffer(function(err, buffer){//exrtact 参数 top left width height
-            callback(err, buffer);
-        })
-    },function(callback){ //小图
-        sharp(path).extract(req.body.y1,req.body.x1,req.body.w,req.body.h).resize(64,64).toBuffer(function(err, buffer){
-            callback(err, buffer);
-        })
-    }],cb)
-}
-
 function update(req, res, next){
     try {
         if(!req.session.user) return res.redirect("/");
@@ -197,6 +196,7 @@ function update(req, res, next){
     }
 
 }
+
 function toUpdate(req, res, next){
     var id = req.query.id;
     advertService.get(id,function(err, data){

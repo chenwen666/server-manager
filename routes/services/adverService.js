@@ -44,6 +44,7 @@ module.exports.save = function(obj ,cb){
         }
     },function(code,callback){
         if(code != Code.OK) return callback(null, code);
+<<<<<<< HEAD
         redisSetPhotoData(obj, callback);
     }],cb)
 }
@@ -77,6 +78,21 @@ function redisSetPhotoData(obj, cb){
         if(err) return cb(err, Code.SYSTEM_ERROR);
         cb(err, Code.OK);
     })
+=======
+        async.parallel([function(callback){
+            advertDao.hset(SystemConfig.REDIS_REDUCE_KEY,obj.p,obj.pd, function(err){
+                if(err) return callback(err,Code.SYSTEM_ERROR);
+                callback(null,Code.OK);
+            });
+        },function(callback){
+            advertDao.hset(SystemConfig.REDIS_ADVERT_IMAGE_KEY,obj.p,obj.urd, function(err){
+                if(err) return callback(err,Code.SYSTEM_ERROR);
+                callback(null,Code.OK);
+            });
+        }],callback)
+
+    }],cb)
+>>>>>>> 634d6d6c1a3d3f9f47e2f9b432da67e59085849e
 }
 /**
  * 根据ID获取广告
@@ -96,7 +112,15 @@ module.exports.update = function(id,obj,cb){
     async.parallel([function(callback){
         advertDao.update({_id:id},obj,callback);
     },function(callback){
+<<<<<<< HEAD
         redisSetPhotoData(obj, callback)
+=======
+        async.parallel([function(callback){
+            advertDao.hset(SystemConfig.REDIS_REDUCE_KEY,path,obj.pd, callback);
+        },function(callback){
+            advertDao.hset(SystemConfig.REDIS_ADVERT_IMAGE_KEY,path,obj.urd, callback);
+        }],callback)
+>>>>>>> 634d6d6c1a3d3f9f47e2f9b432da67e59085849e
     }],cb)
 }
 /**
@@ -114,7 +138,7 @@ module.exports.setContent = function(id, obj, cb){
  * @param cb
  */
 module.exports.getPhoto = function(path, cb){
-    advertDao.hget(SystemConfig.REDIS_ADVERT_IMAGE_KEY,path,cb);
+    advertDao.hget(SystemConfig.REDIS_REDUCE_KEY,path,cb);
 }
 
 module.exports.del = function(ids,photos, cb){
