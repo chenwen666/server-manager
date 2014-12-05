@@ -15,7 +15,7 @@ var propertyFilter = require("./lib/PropertyFilter");
 var User = require("./domain/User");
 
 //var im = require("imagemagick");
-var sharp = require("sharp");
+//var sharp = require("sharp");
 
 /* GET home page. */
 
