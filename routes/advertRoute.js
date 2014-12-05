@@ -13,6 +13,10 @@ var fs = require("fs");
 var propertyFilter = require("./lib/PropertyFilter");
 
 var User = require("./domain/User");
+
+//var im = require("imagemagick");
+var sharp = require("sharp");
+
 /* GET home page. */
 
 router.use(function(req, res, next){
@@ -34,8 +38,6 @@ router.post("/add", add);
 router.get("/update",toUpdate);
 
 router.post("/update",update);
-
-router.post("/update/content",setContent);
 
 router.post("/delete", del);
 
@@ -76,24 +78,44 @@ function toAdd(req, res, next){
         message : ""
     });
 }
-
+/**
+ * 添加广告
+ * @param req
+ * @param res
+ * @param next
+ * @returns {*}
+ */
 function add(req, res, next){
     try {
         if(!req.session.user) return res.redirect("/");
         var username = req.session.user.u;
-        var tmpPath = req.files.file.path;
+        var tmpPath = process.cwd()+"/"+req.files.file.path;
+        var suffix = tmpPath.split(".")[1];
         var fileName = requestUtils.generateId(tmpPath);
-        var data = fs.readFileSync(tmpPath);
-        var buff = new Buffer(data,'base64');
-        fs.unlinkSync(tmpPath);
-        advertService.save({
-            u : username,
-            c : req.body.content,
-            p : fileName,
-            d : buff
-        },function(err){
-            if(err) return next(err);
-            res.end();
+        async.waterfall([function(callback){
+            buffers(tmpPath, req, callback);
+        },function(buffers,callback){
+            fs.unlinkSync(tmpPath);
+            advertService.save({
+                u : username,
+                c : req.body.content,
+                p : fileName, //hash
+                pd : buffers[2],    //小图
+                zd : buffers[1],
+                urd : buffers[0]     //yuantu
+            },callback)
+        }],function(err,code){
+            if(err){
+                log.error("adverRoute.add.error:"+err.stack);
+                return next(err);
+            }
+            var message = SystemConfig.OK;
+            if(code!=Code.OK){
+                message = "商家不存在";
+            }
+            res.render("addAdvert",{
+                message : message
+            });
         })
     }catch(err){
         log.error("保存广告错误:"+err.stack);
@@ -102,28 +124,78 @@ function add(req, res, next){
         });
     }
 }
+function buffers(path, req, cb){
+    async.parallel([function(callback){//原图
+        getPhotoBuffer(path,req.body,callback);
+    },function(callback){ //中图
+        sharp(path).extract(req.body.y1,req.body.x1,req.body.w,req.body.h).resize(256,256).toBuffer(function(err, buffer){//exrtact 参数 top left width height
+            callback(err, buffer);
+        })
+    },function(callback){ //小图
+        sharp(path).extract(req.body.y1,req.body.x1,req.body.w,req.body.h).resize(64,64).toBuffer(function(err, buffer){
+            callback(err, buffer);
+        })
+    }],cb)
+}
+
 function update(req, res, next){
     try {
         if(!req.session.user) return res.redirect("/");
-        var username = req.session.user.u;
-        var tmpPath = req.files.file.path;
-        var oldpath = req.body.oldpath.split(".")[0];
-        var id = req.body._id;
-        var data = fs.readFileSync(tmpPath);
-        var buff=new Buffer(data,'base64');
-        var obj = {
-            c : req.body.content,
-            d : data
+        var tmpPath;
+        if(!!req.files.file.path.split(".")[1]){
+            tmpPath = process.cwd()+"/"+req.files.file.path;
         }
-        advertService.update(id,oldpath,obj, function(err){
-            res.end();
-        });
+        var id = req.body.id;
+        var photoHash = req.body.p;
+        var successCallback = function(message){
+            res.render("updateAdvert",{
+                message : message,
+                advert : {
+                    id : id,
+                    content : req.body.content,
+                    photo : photoHash
+                }
+            });
+        }
+        async.waterfall([function(callback){
+            if(!!tmpPath){  //如果有文件提交
+                buffers(tmpPath, req, callback);
+            }else{
+                callback(null, null);
+            }
+        },function(buffers,callback){
+            fs.unlinkSync(process.cwd()+"/"+req.files.file.path);
+            if(!!tmpPath){  //如果有文件提交
+                advertService.update(id,{
+                    c : req.body.content,
+                    p : photoHash, //hash
+                    pd : buffers[2],    //小图
+                    zd : buffers[1],
+                    urd : buffers[0]     //yuantu
+                },callback)
+            }else{ //只修改内容
+                advertService.setContent(id,{
+                    c : req.body.content
+                },function(err){
+                    if(err){
+                        log.error("adverRoute.add.error:"+err.stack);
+                        return next(err);
+                    }
+                    successCallback(SystemConfig.OK);
+                });
+            }
+        }],function(err,code){
+            if(err){
+                log.error("adverRoute.add.error:"+err.stack);
+                return next(err);
+            }
+            successCallback(SystemConfig.OK);
+        })
     }catch(err){
-        log.error("保存广告错误:"+err.stack);
-        res.render("addAdvert",{
-            message : "系统错误"
-        });
+        log.error("修改广告错误:"+err.stack);
+        successCallback(SystemConfig.FAIL);
     }
+
 }
 function toUpdate(req, res, next){
     var id = req.query.id;
@@ -173,5 +245,15 @@ function del(req, res, next){
         log.error(err.stack);
         next(err);
     }
+}
+
+function getReducePath(username,suffix){
+    return "uploads/"+username+new Date().getTime()+"."+suffix;
+}
+
+function getPhotoBuffer(path, body , cb){  //exrtact 参数 top left width height
+    sharp(path).extract(body.y1,body.x1,body.w,body.h).toBuffer(function(err,buffer){
+        cb(err, buffer);
+    })
 }
 module.exports = router;

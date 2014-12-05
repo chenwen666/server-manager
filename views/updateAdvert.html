@@ -1,163 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>添加广告表单</title>
-    <link rel="stylesheet" type="text/css" href="/easyui/themes/default/easyui.css">
-    <link rel="stylesheet" type="text/css" href="/easyui/themes/icon.css">
+    <title>修改广告表单</title>
+    <link href="/stylesheets/jquery.Jcrop.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
-    <script type="text/javascript" src="/javascripts/jquery.js"></script>
-    <!-- easyui -->
-    <script type="text/javascript" src="/easyui/jquery.easyui.min.js"></script>
-    <script type="text/javascript" src="/easyui/locale/easyui-lang-zh_CN.js"></script>
-
-
-    <!-- webuploader -->
-    <!--<link rel="stylesheet" href="/stylesheets/style/uploader.css">-->
-    <link rel="stylesheet" href="/webuploader/dist/webuploader.css">
+    <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.Jcrop.min.js"></script>
+    <script type="text/javascript" src="/javascripts/script.js"></script>
     <style>
-
+        .preview {
+            width: 400px;
+        }
     </style>
 </head>
 <body>
 <div style="height: 20px;color: red;font-weight: bold;font-size: 13px;" id="message"><%=message%></div>
-<form action="/advert/add" method="post" id="form">
+<form action="/advert/update" method="post" id="form" enctype="multipart/form-data">
+    <input type="hidden" name="id" value="<%=advert.id%>">
+    <input type="hidden" name="p" value="<%=advert.photo%>">
     <table class="table-list-form">
         <tr>
             <td align="right" >
                 <span>内容</span>
             </td>
             <td>
-                <textarea id="content" name="content" class="content" style="width:100%;height:110px;"><%=advert.content%></textarea>
+                <textarea id="content" name="content" class="content" style="width:100%;height:60px;"><%=advert.content%></textarea>
             </td>
         </tr>
-        <tr>
+        <tr style="height: 300px;">
             <td align="right" >
                 <span>图片</span>
             </td>
             <td>
-                <div id="photoBox" style="display: inline"><div style="display: inline">
-                    <img src="/advert/photo/<%=advert.photo%>" style="width: 100px;height: 100px;" id="photo"/>
-                </div></div><div id="filePicker" style="display: inline">选择图片</div>
+                <div>
+                    <div style="float: left;width: 400px;">
+                        <img id="preview" class="preview" src="/advert/photo/<%=advert.photo%>" />
+                    </div>
+                    <div style="float:right;width: 200px;overflow-x:hidden;">
+                        <div style="width: 180px;height: 180px;border: 1px solid #95B8E7;overflow:hidden;position:relative;">
+                            <img id="reduce" src="" />
+                        </div>
+                        <div style="color: #ac2925;font-size: 12px;">
+                            <br/>
+                            选择的图片不能超过400KB<br/>尺寸&nbsp;>=&nbsp;512*512<br/>支持的格式有:jpg,png
+                            <input type="hidden" id="w" name="w" size="3"/><br/>
+                            <input type="hidden" id="h" name="h" size="3"/>
+                        </div>
+                        <div style="padding-top: 20px;">
+                            <input type="hidden" id="x1" name="x1" />
+                            <input type="hidden" id="y1" name="y1" />
+                            <input type="hidden" id="x2" name="x2" />
+                            <input type="hidden" id="y2" name="y2" />
+                            <input type="file" name="file" id="file" onChange="fileSelectHandler()" value="选择图片"/>
+                        </div>
+                    </div>
+                </div>
             </td>
         </tr>
     </table>
 </form>
-<script src="/webuploader/dist/webuploader.js"></script>
 <script type="text/javascript">
-
-    var uploader = WebUploader.create({
-
-        // 选完文件后，是否自动上传。
-        auto: false,
-
-        // swf文件路径
-        swf:   '/js/Uploader.swf',
-
-        // 文件接收服务端。
-        server: '/advert/update',
-
-        // 选择文件的按钮。可选。
-        // 内部根据当前运行是创建，可能是input元素，也可能是flash.
-        pick: '#filePicker',
-        //文件上传参数表
-        formData : {
-
-        },
-        compress : {
-            quality : 300
-        },
-        // 只允许选择图片文件。
-        accept: {
-            title: 'Images',
-            extensions: 'gif,jpg,jpeg,bmp,png',
-            mimeTypes: 'image/*'
-        }
-    });
-    // 当有文件添加进来的时候
-    uploader.on( 'fileQueued', function( file ) {
-        // 创建缩略图
-        // 如果为非图片文件，可以不用调用此方法。
-        // thumbnailWidth x thumbnailHeight 为 100 x 100
-        uploader.makeThumb( file, function( error, src ) {
-            $("#photo").attr( 'src', src );
-        }, 100, 100 );
-    });
-    // 文件上传过程中创建进度条实时显示。
-    uploader.on( 'uploadProgress', function( file, percentage ) {
-        var $li = $( '#'+file.id ),
-                $percent = $li.find('.progress span');
-
-        // 避免重复创建
-        if ( !$percent.length ) {
-            $percent = $('<p class="progress"><span></span></p>')
-                    .appendTo( $li )
-                    .find('span');
-        }
-
-        $percent.css( 'width', percentage * 100 + '%' );
-    });
-
-    // 文件上传成功，给item添加成功class, 用样式标记上传成功。
-    uploader.on( 'uploadSuccess', function( file ) {
-//        window.location.reload(true);
-        parent.location.reload();
-    });
-    // 文件上传失败，显示上传出错。
-    uploader.on( 'uploadError', function( file ) {
-        var $li = $( '#'+file.id ),
-                $error = $li.find('div.error');
-
-        // 避免重复创建
-        if ( !$error.length ) {
-            $error = $('<div class="error"></div>').appendTo( $li );
-        }
-        $error.text('上传失败');
-    });
-
-    // 完成上传完了，成功或者失败，先删除进度条。
-    uploader.on( 'uploadComplete', function( file ) {
-        $( '#'+file.id ).find('.progress').remove();
-    });
-
-    $(function(){
-        $("#filePicker").click(function(){
-            $("#message").text("");
-        });
-    });
-
     $(function(){
         $(window.parent.document.getElementById("trueSubmit")).click(function(){
-            var content = $("#content").val();
-            var image = document.getElementById("photo").src;
-            /*
-             if(!content){
-             $(document.getElementById("diaIframe").contentWindow.document.getElementById("message")).text("请输入内容");
-             }
-             */
-            var suffix = image.split("/").pop();
-            var oldpath =  '<%=advert.photo%>';
-            var oldSuffix = oldpath.split("/").pop();
-            if(suffix == oldSuffix){
-                $.ajax({
-                    url : "/advert/update/content",
-                    type : "POST",
-                    data : {
-                        content : content,
-                        _id :  '<%=advert.id%>'
-                    },
-                    success : function(){
-                        parent.location.reload();
-                    }
-                })
-            }else{
-                uploader.options.formData = {
-                    oldpath : '<%=advert.photo%>',
-                    content : content,
-                    _id : '<%=advert.id%>'
-                };   //编辑的内容
-//        document.getElementById('diaIframe').contentWindow.uploader.options.formData.time = content;   //编辑的内容
-                uploader.upload();
-            }
+            $("#form").submit();
         })
     });
 </script>

@@ -1,0 +1,13 @@
+[2014-12-03 14:39:57.027] [INFO] normal - Express server listening on port 3001
+[2014-12-03 14:40:41.292] [INFO] normal - Express server listening on port 3002
+[2014-12-03 14:40:43.310] [ERROR] normal - 连接mongodb数据库失败:Error: failed to connect to [192.168.1.100:27017]
+    at null.<anonymous> (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\server.js:549:74)
+    at emit (events.js:106:17)
+    at null.<anonymous> (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:150:15)
+    at emit (events.js:98:17)
+    at Socket.<anonymous> (E:\workpace\nodejs\server-manager\node_modules\mongoose\node_modules\mongodb\lib\mongodb\connection\connection.js:533:10)
+    at Socket.emit (events.js:95:17)
+    at net.js:440:14
+    at process._tickCallback (node.js:419:13)
+[2014-12-03 14:41:25.723] [INFO] normal - Express server listening on port 3002
+[2014-12-03 14:41:25.787] [INFO] normal - mongodb已连接

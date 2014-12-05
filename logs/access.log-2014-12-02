@@ -1,0 +1,63 @@
+[2014-12-02 12:03:48.036] [INFO] normal - Express server listening on port 3001
+[2014-12-02 12:03:48.061] [INFO] normal - mongodb已连接
+[2014-12-02 15:19:23.314] [ERROR] normal - 保存广告错误:TypeError: Cannot read property 'path' of undefined
+    at add (E:\workpace\nodejs\server-manager\routes\advertRoute.js:95:37)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:312:12)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:295:3)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:189:10)
+[2014-12-02 15:20:04.188] [INFO] normal - Express server listening on port 3001
+[2014-12-02 15:20:04.210] [INFO] normal - mongodb已连接
+[2014-12-02 15:20:20.086] [ERROR] normal - 保存广告错误:TypeError: Cannot read property 'path' of undefined
+    at add (E:\workpace\nodejs\server-manager\routes\advertRoute.js:97:37)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:312:12)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:295:3)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:189:10)
+[2014-12-02 15:56:01.143] [INFO] normal - Express server listening on port 3001
+[2014-12-02 15:56:01.162] [INFO] normal - mongodb已连接
+[2014-12-02 15:56:15.876] [ERROR] normal - 保存广告错误:TypeError: Cannot read property 'path' of undefined
+    at add (E:\workpace\nodejs\server-manager\routes\advertRoute.js:97:37)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:312:12)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:295:3)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:189:10)
+[2014-12-02 16:44:12.409] [ERROR] normal - 保存广告错误:TypeError: Cannot read property 'path' of undefined
+    at add (E:\workpace\nodejs\server-manager\routes\advertRoute.js:97:37)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:312:12)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:295:3)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:189:10)
+[2014-12-02 16:45:41.581] [ERROR] normal - 保存广告错误:TypeError: Cannot read property 'path' of undefined
+    at add (E:\workpace\nodejs\server-manager\routes\advertRoute.js:97:37)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\layer.js:82:5)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:234:24
+    at Function.proto.process_params (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:312:12)
+    at E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:295:3)
+    at next (E:\workpace\nodejs\server-manager\node_modules\express\lib\router\index.js:189:10)
+[2014-12-02 17:17:01.519] [INFO] normal - Express server listening on port 3001
+[2014-12-02 17:17:01.544] [INFO] normal - mongodb已连接

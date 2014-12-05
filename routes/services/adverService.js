@@ -44,11 +44,39 @@ module.exports.save = function(obj ,cb){
         }
     },function(code,callback){
         if(code != Code.OK) return callback(null, code);
-        advertDao.hset(SystemConfig.REDIS_ADVERT_IMAGE_KEY,obj.p,obj.d, function(err){
-            if(err) return callback(err,Code.SYSTEM_ERROR);
+        redisSetPhotoData(obj, callback);
+    }],cb)
+}
+
+function redisSetPhotoData(obj, cb){
+    async.parallel([function(callback){
+        advertDao.hset(SystemConfig.REDIS_REDUCE_KEY,obj.p,obj.pd, function(err){
+            if(err){
+                log.error("advertService.redisSetPhotoData.error:"+err.stack);
+                return callback(err,Code.SYSTEM_ERROR);
+            }
             callback(null,Code.OK);
         });
-    }],cb)
+    },function(callback){
+        advertDao.hset(SystemConfig.REDIS_ADVERT_IMAGE_KEY,obj.p,obj.urd, function(err){
+            if(err) {
+                log.error("advertService.redisSetPhotoData.error:"+err.stack);
+                return callback(err,Code.SYSTEM_ERROR);
+            }
+            callback(null,Code.OK);
+        });
+    },function(callback){
+        advertDao.hset(SystemConfig.REDIS_MIDDLE_KEY,obj.p,obj.zd, function(err){
+            if(err) {
+                log.error("advertService.redisSetPhotoData.error:"+err.stack);
+                return callback(err,Code.SYSTEM_ERROR);
+            }
+            callback(null,Code.OK);
+        });
+    }],function(err){
+        if(err) return cb(err, Code.SYSTEM_ERROR);
+        cb(err, Code.OK);
+    })
 }
 /**
  * 根据ID获取广告
@@ -64,11 +92,11 @@ module.exports.get = function(id, cb){
  * @param obj
  * @param cb
  */
-module.exports.update = function(id ,path,obj,cb){
+module.exports.update = function(id,obj,cb){
     async.parallel([function(callback){
         advertDao.update({_id:id},obj,callback);
     },function(callback){
-        advertDao.hset(SystemConfig.REDIS_ADVERT_IMAGE_KEY, path, obj.d, callback);
+        redisSetPhotoData(obj, callback)
     }],cb)
 }
 /**
@@ -95,7 +123,13 @@ module.exports.del = function(ids,photos, cb){
         advertDao.remove(conditions, callback);
     },function(callback){
         for(var i= 0,l=photos.length;i<l;i++){
-            advertDao.hdel(SystemConfig.REDIS_ADVERT_IMAGE_KEY,photos[i],function(err){
+            advertDao.hdel(SystemConfig.REDIS_ADVERT_IMAGE_KEY,photos[i],function(err){//删除原图
+                if(err) log.error("advertService.del.err:"+err.stack);
+            })
+            advertDao.hdel(SystemConfig.REDIS_MIDDLE_KEY,photos[i],function(err){ //删除中图
+                if(err) log.error("advertService.del.err:"+err.stack);
+            })
+            advertDao.hdel(SystemConfig.REDIS_REDUCE_KEY,photos[i],function(err){ //删除小图
                 if(err) log.error("advertService.del.err:"+err.stack);
             })
         }

@@ -13,6 +13,7 @@ var redis = require("./routes/database/redis");
 
 var userRoute = require("./routes/userRoute");
 var advertRoute = require("./routes/advertRoute");
+
 var app = express();
 
 
@@ -71,7 +72,7 @@ app.use(function(err, req, res, next) {
         error: {}
     });
 });
-var server = app.listen(3001, function() {
+var server = app.listen(3002, function() {
     log.info('Express server listening on port ' + server.address().port);
 });
 
